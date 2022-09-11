@@ -1,0 +1,569 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* home  */
+
+.home{
+    height: 100vh;
+    background: linear-gradient(rgba(197, 64, 64, 0.4) , rgba(126, 28, 28, 0.3)) , url(../images/slider/slider-01.jpg) ;
+    background-size: cover;
+    overflow: auto;
+}
+
+.navbar{
+    width: 90%;
+    margin:auto ;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 10px;
+    left: 60px;
+}
+
+.left a{
+    color: red;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.right a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 15px;
+    transition: 2s;
+}
+.right a:hover{
+    color: red;
+}
+.right .alone{
+    color:gray;
+}
+
+.homecontent{
+    text-align: center;
+    color: white;
+    margin-top: 200px;
+}
+.homecontent h1{
+    color: crimson;
+    padding: 10px 0px;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.homecontent p{
+    font-size: 25px;
+    font-family: cursive;
+}
+
+
+/* hellow  */
+
+.hellow{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.hellow .image{
+    border: 8px solid brown;
+}
+
+.image .img{
+    transform: translate(30px,30px);
+    position: relative;
+    overflow: hidden;
+}
+
+.img .overlay{
+    background-color: brown;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    /* opacity: 0 ;  */
+    transition: 2s;
+}
+.img:hover .overlay{
+    opacity: .5;
+    top: 0%;
+}
+
+
+.hellow .text{
+    width: 40%;
+}
+.hellow .text h2{
+    font-size: 30px;
+    padding-left: 20px;
+    position: relative;
+}
+.hellow .text h2::before{
+    content:"" ;
+    background-color: brown;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 1%;
+    height: 70%;
+}
+.text p{
+    color: brown;
+    line-height: 25px;
+}
+.text hr{
+    margin-top: 40px;             
+    border: 1px dashed ;
+}
+.text table{
+    margin: 10px 0px 30px ;
+}
+.text table td{
+    padding-top: 25px;
+}
+.text table .td{
+    padding-left: 50px;
+}
+.text table span{
+    color: crimson;
+    font-weight: bold;
+}
+
+/* buttons */
+.text a{
+    text-decoration: none;
+    background-color: red ;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: 1s;
+}
+.text a:hover{
+    background-color: darkred;
+}
+
+
+/* service  */
+
+.service{
+    background-color:gainsboro;
+    height: 400px;
+    margin-top: 100px;
+    text-align: center;
+}
+.service .head1{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 40px;
+}
+
+.head1 .hr{
+    background-color: crimson;
+    width: 15%;
+    margin: 15px auto 30px;
+    height: 1px;
+    position: relative;
+}
+.hr::before{
+    content: "";
+    background-color: darkred;
+    position: absolute;
+    bottom: 5px;
+    left:25px ;
+    width: 70%;
+    height: 100%;
+}
+.hr::after{
+    content: "";
+    background-color: darkred;
+    position: absolute;
+    top: 5px;
+    left:25px ;
+    width: 70%;
+    height: 100%;
+}
+ 
+.service .sec{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+}
+.service .sec1{
+    width: 30%;
+    line-height: 150% ;                
+    transition: 1s;
+}
+.sec h2{
+    padding: 70px 0px 15px;
+}
+
+.sec1:hover{
+    background-color: white;
+}
+
+
+/* portfolio  */
+.portfolio{
+    background-color:ghostwhite;
+    margin-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+    overflow: auto;
+}
+.portfolio h1{
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ 
+
+.portfolio .hr{
+    background-color: crimson;
+    width: 15%;
+    margin: 15px auto 30px;
+    height: 1px;
+    position: relative;
+}
+.portfolio .hr::before{
+    content: "";
+    background-color: darkred;
+    position: absolute;
+    bottom: 5px;
+    left:25px ;
+    width: 70%;
+    height: 100%;
+}
+.portfolio .hr::after{
+    content: "";
+    background-color: darkred;
+    position: absolute;
+    top: 5px;
+    left:25px ;
+    width: 70%;
+    height: 100%;
+}
+.portfolio .bar p{
+    display: inline-block;
+    padding: 0px 20px 30px;
+}
+
+.portfolio .port1{
+    width: 75% ;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+   
+}
+
+.port1 .port2{
+    width: 29%;
+    position: relative;
+}
+.port2 img{
+    background-color: turquoise;
+    width: 100%; 
+}
+
+ .port2 .overlay{
+    background-color: gray;
+    width: 100%;
+    height: 100%;
+    position: absolute;            
+    top: 0%;
+    left: 0;
+    opacity: 0;
+    transition: 1s;
+}
+
+.port2:hover .overlay {
+    opacity: .5;
+} 
+
+
+
+/* number  */
+.number{
+    background-color:gainsboro ;
+    margin: 70px ;
+}
+.number .num{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.num .num1{
+    width: 35%;
+    text-align: center;
+}
+
+.num h1{
+    margin-top: 75px;
+}
+.num p{
+    color: dimgray;
+    font-weight: bold;
+    padding: 15px;
+}
+
+/* client  */
+.client{
+    background-color: brown;
+    height: 500px;
+}
+.client h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    text-align: center;
+    padding: 20px 0px;
+}
+.client .hr{
+    background-color: red;
+    width: 15%;
+    margin: 0px auto 40px;
+    height: 1px;
+    position: relative;
+}
+.client .hr::before{
+    content: "";
+    background-color: red;
+    position: absolute;
+    bottom: 5px;
+    left:25px ;
+    width: 70%;
+    height: 100%;
+}
+.client .hr::after{
+    content: "";
+    background-color: red;
+    position: absolute;
+    top: 5px;
+    left:25px ;
+    width: 70%;
+    height: 100%;
+}
+
+.client .client1{
+    background: linear-gradient(135deg, red 18% , gainsboro 18%) ;
+    width: 55%;
+    height: 45%;
+    margin: auto ;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap:20px;
+}
+.client1 .img{
+    width: 17%;
+}
+.client .img img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.client1 .text{
+    width: 75%;
+}
+.client1 .text p{
+    color: brown;
+    line-height: 20px;
+}
+
+.client3{
+    width: 20%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+}
+.client .select1{
+    background-color: red;
+    width: 30px;
+    height: 13px;
+    border-radius: 10px;
+}
+.client .select2{
+    width: 12px;
+    height: 11px;
+    border: 1px solid red;       
+    border-radius: 50%;
+}
+
+
+
+/* blog  */
+.blog{
+    background-color: gainsboro;  
+    height: 600px;
+    margin-top: 70px;
+    padding-top: 50px;
+}
+.blog h1{
+    text-align: center;
+}
+
+.blog .hr{
+    background-color: red;
+    width: 15%;
+    margin: 20px auto 40px;
+    height: 1px;
+    position: relative;
+}
+.blog .hr::before{
+    content: "";
+    background-color: red;
+    position: absolute;
+    bottom: 5px;
+    left:25px ;
+    width: 70%;
+    height: 100%;
+}
+.blog .hr::after{
+    content: "";
+    background-color: red;
+    position: absolute;
+    top: 5px;
+    left:25px ;
+    width: 70%;
+    height: 100%;
+}
+.blog .blog1{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+}
+.blog .blog2{
+    background-color: white;
+    width: 30%;
+}
+
+.blog2 img{
+    width: 100%;
+}
+.blog2 video{
+    width: 100%;
+}
+
+p{
+    margin: 20px 5px ;
+    line-height: 20px;
+}
+
+.blog1 a{
+    text-decoration: none;
+    color: black;
+    transition: 1s;
+}
+.blog1 a:hover{
+    color: brown;
+}
+
+
+/* contact  */
+.contact{
+    background-color:ghostwhite;
+    height: 500px;
+    margin-top: 80px;
+    padding-top: 50px;
+    text-align: center;
+}
+.contact h1{
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contact .hr{
+    background-color: crimson;
+    width: 15%;
+    margin: 20px auto 40px;
+    height: 1px;
+    position: relative;
+}
+.contact .hr::before{
+    content: "";
+    background-color: crimson;
+    position: absolute;
+    bottom: 5px;
+    left:25px ;
+    width: 70%;
+    height: 100%;
+}
+.contact .hr::after{
+    content: "";
+    background-color: crimson;
+    position: absolute;
+    top: 5px;
+    left:25px ;
+    width: 70%;
+    height: 100%;
+}
+
+.contact input{
+    width: 21%;
+    height: 35px;
+    border-radius: 8px;
+    border: 1px solid gainsboro;
+}
+.contact .mo{
+    display: block;               
+    width: 42%;
+    height: 35px;
+    margin: 40px auto ;
+    border: 1px solid gainsboro;
+}
+.contact textarea{
+    border-radius: 8px; 
+    padding: 10px 0px 0px 15px;
+    border: 1px solid gainsboro;
+}
+::placeholder{                           
+    color: crimson;
+    padding-left: 15px;
+}
+.contact button{
+    display: block;
+    margin:30px 0px 0px 380px ;
+    padding: 12px;
+    color: white;
+    background-color: crimson;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 1s;
+}
+.contact button:hover{
+    background-color: tomato;
+}
+
+
+/* rights  */
+.rights{
+    background-color: #111111 ;
+    height: 170px;
+    text-align: center;
+}
+.rights p{
+    color: crimson;
+    padding-top: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.rights a{
+    color: gray;
+    text-decoration: none;
+}
+.rights a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
